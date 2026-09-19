@@ -22,9 +22,9 @@ from modules.suggested_questions import generate_suggested_questions
 # ==========================================
 # LOAD ENVIRONMENT VARIABLES
 # ==========================================
+load_dotenv()
 
 llm = ChatGroq(
-    api_key=os.getenv("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"),
     model="llama-3.3-70b-versatile",
     temperature=0
 )
